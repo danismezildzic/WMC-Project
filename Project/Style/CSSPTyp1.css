@@ -1,8 +1,79 @@
+*{
+  margin: 0;
+}
+
 body{
-  background-color: rgb(255, 255, 255);
-  background-position: top;
+  
+  background-position: 0px;
 }
 .header{
-  background-color: azure;
-  object-position: center;
+  font-family: "Arial";
+  color: white;
+  background-image: url('background.jpg');
+  background-size: 100% 100%;
+  height: 100px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeImage{
+  background-image: url(timeImg.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+#information{
+  margin: 10px 0 0 10px;
+  width: 100%;
+  float:left;
+}
+#danis{
+  font-weight: bold;
+  background-color: rgb(234, 238, 241);
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid rgb(220, 220, 220);
+  margin-left: 0px;
+  margin-top: 0px;
+  float: both;
+}
+
+#aaron{
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid rgb(220, 220, 220);
+    margin-left: 0px;
+    margin-top: 0px;
+    float: both;
+}
+
+#simon{
+    font-weight: bold;
+    background-color: aliceblue;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid rgb(220, 220, 220);
+    margin-left: 0px;
+    margin-top: 0px;
+    float: both;
+}
+#info{
+  font-weight: bold;
+  background-color: aliceblue;
+  width: 950px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid rgb(220, 220, 220);
+  margin-left: -150px;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+
 }

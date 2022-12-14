@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: #222222;
+    font-family: Helvetica, sans-serif;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0;
+  }
+.header{
+  background: #222222;
+  background-size: 100% 100%;
+  height: 500px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-size: 500%;
+    padding-top: 200px;
+
+}
+.text:hover{
+  font-size: 600%;
+}
+a:hover{
+    font-size: 20px;
+    color: red;
+}
+.arrow{
+  color: white;
+  background: #222222;
+  font-size: 100px;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downheader{
+  margin: 15px;
+  margin-top: 125px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.about{
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 160px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info{
+  color: #333333;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 355px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.rest{
+  color: #c1c1c1;
+  font-size: .75em;
+  font-weight: 400;
+  padding-top: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.about:hover{
+  text-decoration:  underline ;
+}
+.info:hover{
+    text-decoration: underline;
+}
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #222222;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: -3.3px;
+  }
+  
+  .right {
+    left: 50.26%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+    .right {
+      left: 0%;
+    }
+    /*Verweis auf "Über uns"*/
+  }
